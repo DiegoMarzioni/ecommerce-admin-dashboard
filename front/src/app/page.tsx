@@ -23,8 +23,8 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-lg opacity-30 animate-pulse"></div>
               <div className="relative bg-white rounded-full p-6 shadow-xl border border-slate-200">
                 <Image
-                  src="/assets/logotipo.png"
-                  alt="Tennis Star Logo"
+                  src="https://res.cloudinary.com/dvwpxy4kh/image/upload/v1765300390/logotipo_vch7xl.png"
+                  alt="TechGear Logo"
                   width={120}
                   height={120}
                   className="object-contain"

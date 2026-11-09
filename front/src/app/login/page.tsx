@@ -6,6 +6,8 @@ import Image from 'next/image'
 import { useAuth } from '@/context/AuthContext'
 import { LoadingPage } from '@/components/ui/LoadingSpinner'
 import { Logger } from '@/lib/logger'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 
 function LoginForm() {
   const [formData, setFormData] = useState({
@@ -68,7 +70,7 @@ function LoginForm() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-lg opacity-20 animate-pulse"></div>
               <div className="relative bg-white rounded-full p-4 shadow-lg border border-slate-200">
                 <Image
-                  src="/assets/logotipo.png"
+                  src="https://res.cloudinary.com/dvwpxy4kh/image/upload/v1765300390/logotipo_vch7xl.png"
                   alt="Tennis Star Logo"
                   width={80}
                   height={80}
@@ -92,7 +94,7 @@ function LoginForm() {
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
               Email
             </label>
-            <input
+            <Input
               id="email"
               type="email"
               required
@@ -107,7 +109,7 @@ function LoginForm() {
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
               Contraseña
             </label>
-            <input
+            <Input
               id="password"
               type="password"
               required
@@ -146,13 +148,13 @@ function LoginForm() {
             </div>
           </div>
 
-          <button
+          <Button
             type="submit"
             disabled={loading}
             className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:bg-gray-400 disabled:cursor-not-allowed cursor-pointer transition-colors font-medium"
           >
             {loading ? 'Enviando...' : 'Enviar'}
-          </button>
+          </Button>
 
           {}
           <div className="relative">
